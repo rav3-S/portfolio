@@ -63,7 +63,6 @@
 // export default Navbar;
 
 import { useState } from "react";
-import logo from "../assets/kevinRushLogo.png";
 import { LINKS } from "../constants";
 import { RiCloseFill, RiMenu3Fill } from "react-icons/ri";
 import { TbSquareRoundedLetterR } from "react-icons/tb";

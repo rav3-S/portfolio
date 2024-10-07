@@ -1,5 +1,4 @@
 import About from "./components/About";
-import Animation from "./components/animation";
 import Contacts from "./components/Contact";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
@@ -20,9 +19,7 @@ export default function App() {
         <About />
         <Projects />
         <Technologies />
-
         <Experience />
-
         <Contacts />
       </div>
     </div>

@@ -1,8 +1,5 @@
 import React from "react";
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/kevinRushProfile.png";
-import myPic from "../assets/profilePic.jpg";
-import laptop from "../assets/laptop.png";
 import { motion } from "framer-motion";
 import resume from "../assets/My_Resume.pdf";
 
@@ -59,6 +56,7 @@ const Hero = () => {
             </motion.a>
           </div>
         </div>
+        {/* Space for Addding image*/}
         {/* <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
             <img src={myPic} alt="Ravi" />
