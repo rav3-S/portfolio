@@ -26,8 +26,8 @@ const Projects = () => {
             >
               <img
                 src={project.image}
-                width={150}
-                height={150}
+                width={200}
+                height={200}
                 alt={project.title}
                 className="mb-6 rounded"
               />
@@ -40,14 +40,21 @@ const Projects = () => {
             >
               <h6 className="mb-2 font-semibold">{project.title}</h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium"
-                >
-                  {tech}
+              <div className="flex justify-between items-center">
+                <div className="flex flex-wrap">
+                  {project.technologies.map((tech, index) => (
+                    <span
+                      key={index}
+                      className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <span className="ml-6 bg-stone-300 text-neutral-800 rounded text-sm px-2 py-1 font-semibold">
+                  <a href={project.url}>Github</a>
                 </span>
-              ))}
+              </div>
             </motion.div>
           </div>
         ))}

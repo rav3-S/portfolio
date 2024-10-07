@@ -9,6 +9,6 @@
   scroll-behavior: smooth;
 }
 
-#work, #about, #experience, #technologies, #contact {
+#projects, #about, #experience, #technologies, #contact {
   scroll-margin-top: 80px;
 }
