@@ -28,7 +28,13 @@ export const EXPERIENCES = [
     role: "Senior Solution Engineer",
     company: "IBS Software.",
     description: `Developed and maintained internal developer applications, enhancing system stability by 25% through bug fixes and support. Led UI design for client dashboards to improve user experience and collaborated on new SSO authentication integration. Migrated legacy systems to GitHub Actions, reducing deployment time by 20%.`,
-    technologies: ["Typescript", "React.js", "Apollo GraphQL", "mongoDB"],
+    technologies: [
+      "Typescript",
+      "React.js",
+      "Apollo GraphQL",
+      "MongoDB",
+      "Jest",
+    ],
   },
 ];
 
@@ -39,7 +45,7 @@ export const PROJECTS = [
     url: "https://github.com/rav3-S/expense-gql",
     description:
       "A full-stack expense management web application using GraphQL APIs, resulting in optimized data fetching and enhanced user experience. Integrated data visualization using charts to present real-time financial insights for users",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    technologies: ["React", "Express.js", "Node.js", "MongoDB", "GraphQL"],
   },
   {
     title: "Portfolio Website",
@@ -47,7 +53,7 @@ export const PROJECTS = [
     url: "https://github.com/rav3-S/portfolio",
     description:
       "This portfolio site right here. Built with React and framer motion for showcasing my ablities. Features responsive design with animations for a smooth and modern user experience.",
-    technologies: ["HTML", "CSS", "React", "Tailwind"],
+    technologies: ["HTML", "CSS", "React", "Tailwind", "Framer Motion"],
   },
 ];
 
