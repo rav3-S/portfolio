@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { HERO_CONTENT } from "../constants";
 import { motion } from "framer-motion";
 import resume from "../assets/My_Resume.pdf";
@@ -14,6 +14,17 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section className="relative pt-20" id="home">
       <div className="flex w-full">
@@ -38,7 +49,9 @@ const Hero = () => {
             variants={container(1)}
             initial="hidden"
             whileInView="visible"
-            className="my-2 max-w-xl py-6 font-light tracking-tighter text-xl"
+            className={`my-2 max-w-xl py-6 font-light tracking-tighter text-xl ${
+              isMobile ? "text-center" : ""
+            }`}
           >
             {HERO_CONTENT.description}
           </motion.p>
@@ -55,7 +68,7 @@ const Hero = () => {
             {HERO_CONTENT.resumeLinkText}
           </motion.a>
         </div>
-        <Particle />
+        {!isMobile && <Particle />}
       </div>
     </section>
   );
