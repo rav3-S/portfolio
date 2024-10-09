@@ -36,7 +36,7 @@ const Contact = () => {
         <span className="text-neutral-500"> Me</span>
       </motion.h1>
       <motion.h3
-        className="text-6xl md:text-8xl leading-none"
+        className="text-5xl md:text-8xl leading-none"
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1 }}
@@ -55,7 +55,7 @@ const Contact = () => {
 
       <motion.a
         href={`mailto:${CONTACT_CONTENT.email}`}
-        className="text-2xl md:text-3xl font-medium mt-12"
+        className="text-xl md:text-3xl font-medium mt-12"
         initial="hidden"
         whileInView="visible"
         custom={0.8}
