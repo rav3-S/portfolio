@@ -26,7 +26,7 @@ const Particle = () => {
           background: {
             color: { value: "#fffff" },
           },
-          fullScreen: false,
+          fullScreen: { enable: false, zIndex: 0 },
           fpsLimit: 120,
           interactivity: {
             events: {

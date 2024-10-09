@@ -12,3 +12,14 @@
 #projects, #about, #experience, #technologies, #contact {
   scroll-margin-top: 80px;
 }
+
+#tsparticles {
+  height: 50vh;
+  width: 55%;
+  position: absolute;
+  left: 45%;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
