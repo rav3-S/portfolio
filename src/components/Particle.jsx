@@ -35,7 +35,7 @@ const Particle = () => {
             },
             modes: {
               push: { quantity: 4 },
-              repulse: { distance: 200, duration: 0.4 },
+              repulse: { distance: 120, duration: 0.4 },
             },
           },
           particles: {
@@ -49,6 +49,7 @@ const Particle = () => {
             },
             move: {
               direction: "none",
+              size: 1,
               enable: true,
               outModes: { default: "bounce" },
               speed: 6,

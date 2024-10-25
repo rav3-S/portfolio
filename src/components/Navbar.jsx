@@ -70,14 +70,27 @@ import { TbSquareRoundedLetterR } from "react-icons/tb";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleLinkClick = () => {
+    // Check if v2 is in the URL
+    // const isV2 = window.location.pathname.includes("v2");
+    // const newPath = isV2 && href === "/portfolio/" ? "/portfolio/v2" : href;
+
+    // // Navigate to the new path
+    // window.location.href = newPath;
     setMenuOpen(false);
+  };
+
+  const handleLogoClick = (event) => {
+    event.preventDefault();
+    const isV2 = window.location.pathname.includes("v2");
+    const newPath = isV2 ? "/portfolio/v2" : "/portfolio/";
+    window.location.href = newPath;
   };
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
       <div className="flex justify-between items-center max-w-6xl mx-auto md:my-2 bg-stone-950/30 p-4 md:rounded-xl backdrop-blur-lg">
         <div className="text-white font-semibold text-lg uppercase">
-          <a href="/portfolio/">
+          <a href="/portfolio/" onClick={handleLogoClick}>
             {/* <img className="mx-2 w-10" src={logo} alt="logo" /> */}
             <TbSquareRoundedLetterR className="mx-2 w-10 text-3xl text-white " />
           </a>
