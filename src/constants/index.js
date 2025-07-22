@@ -1,10 +1,12 @@
 import laptop1 from "../assets/projects/laptop1.jpg";
 import expense from "../assets/projects/expense.png";
+import { getExperienceYears } from "../utils/experienceYears";
 
 export const HERO_CONTENT = {
-  description: `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2+ years of hands-on experience, I have industrial knowledge of technologies such as React,js, Node,js, MongoDB, GraphQL, REST API etc to build scalable full stack apllications. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`,
+  description: `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With ${getExperienceYears()}+ years of hands-on experience, I have industrial knowledge of technologies such as React,js, Node,js, MongoDB, GraphQL, REST API etc to build scalable full stack apllications. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`,
   resumeLinkText: "Download Resume",
   resumeLink: "../assets/My_Resume.pdf",
+  cvText: "Online CV",
 };
 
 export const ABOUT_CONTENT = {
@@ -15,8 +17,8 @@ export const ABOUT_CONTENT = {
 };
 
 export const LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
+  { href: "about", label: "About" },
+  { href: "projects", label: "Projects" },
   { href: "#technologies", label: "Technologies" },
   { href: "#experience", label: "Experience" },
   { href: "#contact", label: "Contact" },

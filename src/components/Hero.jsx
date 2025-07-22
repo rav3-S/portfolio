@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HERO_CONTENT } from "../constants";
 import { motion } from "framer-motion";
-import resume from "../assets/My_Resume.pdf";
+import resume from "../assets/Ravishankar.pdf";
 import Particle from "./Particle";
 
 const container = (delay) => ({
@@ -55,18 +55,31 @@ const Hero = () => {
           >
             {HERO_CONTENT.description}
           </motion.p>
-          <motion.a
-            className="bg-stone-50 text-stone-900 p-3 lg:p-4 mt-8 inline-block rounded-2xl font-semibold"
-            href={resume}
-            download
-            rel="noopener noreferrer"
-            target="_blank"
-            variants={container(1.5)}
-            initial="hidden"
-            whileInView="visible"
-          >
-            {HERO_CONTENT.resumeLinkText}
-          </motion.a>
+          <div>
+            <motion.a
+              className="bg-stone-50 text-stone-900 p-3 lg:p-4 mt-8 mr-8 inline-block rounded-2xl font-semibold"
+              href={resume}
+              download
+              rel="noopener noreferrer"
+              target="_blank"
+              variants={container(1.5)}
+              initial="hidden"
+              whileInView="visible"
+            >
+              {HERO_CONTENT.resumeLinkText}
+            </motion.a>
+            <motion.a
+              className="bg-stone-50 text-stone-900 p-3 lg:p-4 mt-8 inline-block rounded-2xl font-semibold"
+              href="https://cv.rav3.me/"
+              rel="noopener noreferrer"
+              target="_blank"
+              variants={container(1.5)}
+              initial="hidden"
+              whileInView="visible"
+            >
+              {HERO_CONTENT.cvText}
+            </motion.a>
+          </div>
         </div>
         {!isMobile && <Particle />}
       </div>
