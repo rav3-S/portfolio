@@ -17,8 +17,8 @@ export const ABOUT_CONTENT = {
 };
 
 export const LINKS = [
-  { href: "about", label: "About" },
-  { href: "projects", label: "Projects" },
+  { href: "#about", label: "About" },
+  { href: "#projects", label: "Projects" },
   { href: "#technologies", label: "Technologies" },
   { href: "#experience", label: "Experience" },
   { href: "#contact", label: "Contact" },
