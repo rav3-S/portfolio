@@ -1,5 +1,6 @@
 import laptop1 from "../assets/projects/laptop1.jpg";
 import expense from "../assets/projects/expense.png";
+import dochats1 from "../assets/projects/dochats1.png";
 import { getExperienceYears } from "../utils/experienceYears";
 
 export const HERO_CONTENT = {
@@ -41,6 +42,20 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Dochats",
+    image: dochats1,
+    url: "https://github.com/rav3-S/ragchatbot",
+    description:
+      "A RAG based AI application that allows users to upload documents and converse with it. Utilizes semantic similarity search over document chunks. Has OIDC login + Guest mode with query limits",
+    technologies: [
+      "Python",
+      "Streamlit",
+      "LlamaIndex",
+      "Groq API(LLM)",
+      "Hugging Face(embedding)",
+    ],
+  },
   {
     title: "Expense GQL",
     image: expense,
